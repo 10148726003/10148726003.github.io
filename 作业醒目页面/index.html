@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Mozilla splash page</title>
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+    <style>
+      /* header and body setup */
+
+      html {
+        font-family: 'Open Sans', sans-serif;
+        background: url(pattern.png);
+      }
+
+      body {
+        width: 100%;
+        max-width: 1200px;
+        margin: 0 auto;
+        background-color: white;
+        position: relative;
+      }
+
+      /* Header styling */
+
+      header {
+        height: 150px;
+      }
+
+      header img {
+        width: 100px;
+        position: absolute;
+        right: 32.5px;
+        top: 32.5px;
+      }
+
+      h1 {
+        font-size: 50px;
+        line-height: 140px;
+        margin: 0 0 0 32.5px;
+      }
+
+      /* main section and video styling */
+
+      main {
+        background: #ccc;
+      }
+
+      article {
+        padding: 20px;
+      }
+
+      h2 {
+        margin-top: 0;
+      }
+
+      p {
+        line-height: 2;
+      }
+
+      iframe {
+        float: left;
+        margin: 0 20px 20px 0;
+        max-width: 100%;
+      }
+
+      /* further info links */
+
+      .further-info {
+        clear: left;
+        padding: 40px 0;
+        background: #c13832;
+        box-shadow: inset 0 3px 2px rgba(0,0,0,0.5),
+                    inset 0 -3px 2px rgba(0,0,0,0.5);
+      }
+
+      .further-info a {
+        width: 25%;
+        display: block;
+        float: left;
+      }
+
+      .further-info img {
+        max-width: 100%;
+      }
+
+      .clearfix {
+        clear: both;
+      }
+
+      /* Red panda image */
+
+      .red-panda img {
+        display: block;
+        max-width: 100%;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>《尘》--薛之谦</h1>
+      <!-- insert <img> element, link to the small
+          version of the Firefox logo -->
+          <img src="酷狗logo.png">
+    </header>
+
+    <main>
+      <article>
+        <!-- insert iframe from youtube -->
+        <iframe src="http://open.iqiyi.com/developer/player_js/coopPlayerIndex.html?vid=97690fc42e6e7676336a848b0c2a7933&tvId=10870126700&accessToken=2.f22860a2479ad60d8da7697274de9346&appKey=3955c3425820435e86d0f4cdfe56f5e7&appId=1368&height=100%&width=100%" frameborder="0" allowfullscreen="true" width="50%" height="100%"></iframe>
+        <h2>《聊表心意》</h2>
+        <p>演唱：薛之谦/刘惜君<br>词：薛之谦<br>曲：薛之谦<br>我没有那么想你。。。<br><p><a href="https://y.qq.com/n/yqq/song/000J5T6B1GySI5.html#stat=y_new.index.new_song.songname">完整歌词</a></p></p>
+        <p>单机下面图片收听更多专辑内歌曲！</p>
+      </article>
+
+      <div class="further-info">
+        <!-- insert images with srcsets and sizes -->
+        <a href="http://www.kugou.com/song/ziu2b41.html?frombaidu#hash=C1373B658BB627E0028A68D324A60375&album_id=0">
+          <img srcset="病态120.jpg 120w,
+                       病态400.jpg 400w"
+               sizes="(max-width:120px) 80px,
+                      (max-width:400px) 360px"
+               src="病态400.jpg" alt="《病态》这首歌的封面">
+        </a>
+        <a href="https://www.kugou.com/song/104a7s2d.html?frombaidu#hash=5F97D888ECA0697728C7691157E19F9E&album_id=0">
+          <img srcset="尘120.png 120w,
+                       尘400.png 400w"
+               sizes="(max-width:120px) 80px,
+                      (max-width:400px) 360px"
+               src="尘400.png" alt="《尘》这首歌的封面">
+        </a>
+        <a href="http://www.kugou.com/song/xjs5s51.html?frombaidu#hash=8B06858080DEC9E493C3417C96C041F2&album_id=0">
+          <img srcset="木偶人120.jpg 120w,
+                       木偶人400.jpg 400w"
+               sizes="(max-width:120px) 80px,
+                      (max-width:400px) 360px"
+               src="木偶人400.jpg" alt="《木偶人》这首歌的封面">
+        </a>
+        <a href="https://www.kugou.com/song/12jsyof3.html?frombaidu#hash=7338D1BCC0E7975504C63D6B425F85C3&album_id=0">
+          <img srcset="配合120.jpg 120w,
+                       配合400.jpg 400w"
+               sizes="(max-width:120px) 80px,
+                      (max-width:400px) 360px"
+               src="配合400.jpg" alt="《配合》这首歌的封面">
+        </a>
+        <div class="clearfix"></div>
+      </div>
+
+      <div class="red-panda">
+        <picture>
+            <source media="(max-width: 799px)" srcset="写真600.jpg">
+            <source media="(min-width: 800px)" srcset="写真1200.jpg">
+            <img src="写真1200.jpg" alt="薛之谦的写真">
+        </picture>
+        <!-- insert picture element -->
+      </div>
+
+    </main>
+  </body>
+</html>
